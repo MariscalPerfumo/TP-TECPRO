@@ -166,10 +166,10 @@ class Argentur:
             raise Exception("El pago ha sido rechazado")
 
 
-ciudad1 = Ciudad("001","Buenos Aires","Buenos Aires")
-ciudad2 = Ciudad("002","Cordoba","Cordoba")
-ciudad3 = Ciudad("003","Rosario","Santa Fe")
-ciudad4 = Ciudad("004","Santa Fe","Santa Fe")
+ciudad1 = Ciudad("001","Buenos Aires","Buenos Aires") #Origen
+ciudad2 = Ciudad("002","Cordoba","Cordoba") #Destino
+ciudad3 = Ciudad("003","Rosario","Santa Fe") #Ciudad de parada
+ciudad4 = Ciudad("004","Santa Fe","Santa Fe") #Ciudad de parada
 
 itinerario = Intinerario(ciudad1,ciudad2,[ciudad3,ciudad4])
 asientos = [Asiento(i) for i in range(1,6)]
